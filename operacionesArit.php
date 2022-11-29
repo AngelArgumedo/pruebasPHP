@@ -31,11 +31,28 @@
         $mayor = ($numeroX > $numeroY) ? $numeroX : $numeroY;
         // valor devuelto = si (comparacion es verdadero) entonces ? primer valor : segundo valor
 
+
         print('los numeros que escribio son: '.$numeroX .' y '.$numeroY .'<br>');
         print('la suma de los dos numeros es: '.$suma .'<br>');
         print('La resta de los dos numeros es: '.$resta .'<br>');
         print('La multiplicacion de los dos numeros es: '.$multiplicacion .'<br>');
         print('La division de los dos numeros es: '.$division .'<br>');
         print('El mayor entre los dos numeros es: '.$mayor .'<br>');
+
+        //Operaciones logicas
+        if(($numeroX % 2 ) ==0 && ($numeroY % 2 ) == 0){
+            print('Hambos son pares'.'<br>');
+        }elseif (($numeroX % 2 ) ==0) {
+            print('Solo el '.$numeroX.' es par <br>');
+        }elseif (($numeroY % 2 ) == 0) {
+            print('Solo el '.$numeroY.' es par <br>');
+        }else{
+            print('Ambos son impares <br>');
+        };
+
+        if($numeroX < 0 || $numeroY < 0){
+            print('Mi pana el alucin');
+        };
+
     };
 ?>
